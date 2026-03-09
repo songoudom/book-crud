@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">📚 Book Tracker</h1>
+            <div class="nav-links">
+                <a href="index.html">Library</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Dashboard</h1>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <h3>Total Books</h3>
+                <p class="stat-value" id="totalBooks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Currently Reading</h3>
+                <p class="stat-value" id="readingCount">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pages This Month</h3>
+                <p class="stat-value" id="monthlyPages">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Avg Rating</h3>
+                <p class="stat-value" id="avgRating">0.0</p>
+            </div>
+        </div>
+
+        <!-- Books by Status Chart -->
+        <div class="dashboard-section">
+            <h2>Books by Status</h2>
+            <div class="chart-container" id="statusChart">
+                <!-- Will be populated with JavaScript -->
+            </div>
+        </div>
+
+        <!-- Currently Reading -->
+        <div class="dashboard-section">
+            <h2>Currently Reading</h2>
+            <div class="currently-reading" id="currentlyReading">
+                <!-- Will be populated with JavaScript -->
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="dashboard-section">
+            <h2>Recent Activity</h2>
+            <div class="activity-list" id="recentActivity">
+                <!-- Will be populated with JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
